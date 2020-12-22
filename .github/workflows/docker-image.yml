@@ -27,4 +27,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: sammcb/latex:latest
+          tags: |
+            sammcb/latex:latest
+            ghcr.io/sammcb/latex:latest
