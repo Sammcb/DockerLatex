@@ -30,21 +30,3 @@ jobs:
           tags: |
             sammcb/latex:latest
             ghcr.io/sammcb/latex:latest
-# jobs:
-#   publish_to_GHCR:
-#     name: Publish imgae to GitHub Container Registry
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Checkout
-#         uses: actions/checkout@v2
-
-#       - name: Login to GitHub Container Registry
-#         run: docker login ghcr.io -u $GITHUB_ACTOR -p ${{ secrets.CR_PAT }}
-
-#       - name: Build & tag image
-#         run: |
-#           docker build -f Dockerfile . \
-#             -t ghcr.io/sammcb/latex:latest
-#       - name: Publish image
-#         run: |
-#           docker push ghcr.io/sammcb/latex:latest
