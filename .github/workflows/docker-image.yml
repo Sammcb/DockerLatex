@@ -44,7 +44,7 @@ jobs:
       - name: Build & tag image
         run: |
           docker build -f Dockerfile . \
-            -t ghcr.io/packagesrml/my-ubuntu:latest
+            -t ghcr.io/sammcb/latex:latest
       - name: Publish image
         run: |
-          docker push ghcr.io/packagesrml/my-ubuntu:latest
+          docker push ghcr.io/sammcb/latex:latest
